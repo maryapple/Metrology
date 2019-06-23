@@ -3,7 +3,7 @@ from scipy.stats import norm
 
 def func(filename):
     result = []
-    with open(r"C:\Users\Asus\Documents\MIEM\Metrology\hw2\Chvn_v31_b.txt", 'r') as f:
+    with open(filename, 'r') as f:
         for row in f:
             s = row[0] + '.' + row[2:]
             result.append((float(s)))
